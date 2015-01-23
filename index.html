@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css" />
+    <script data-require="angular.js@1.2.x" src="http://code.angularjs.org/1.2.4/angular.js" data-semver="1.2.4"></script>
+    <script src="rzModule.js"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-controller="MainCtrl">
+  <div class="range-slider">
+
+    <rzslider
+    	rz-slider-floor="range1.floor"
+    	rz-slider-ceil="range1.ceil"
+    	rz-slider-model="range1.min"
+    	rz-slider-high="range1.max"
+    	rz-slider-step="{{range1.step}}">
+      <div class="bar">
+        <span class="tick" style="left:{{range1.tick1p}}%">|<br>A<br>{{range1.tick1n}}</span>
+        <span class="tick" style="left:{{range1.tick2p}}%">|<br>B<br>{{range1.tick2n}}</span>
+        <span class="tick" style="left:{{range1.tick3p}}%">|<br>C<br>{{range1.tick3n}}</span>
+      </div>
+      <div class="bar selection"></div>
+      <div class="pointer null"></div>
+      <div class="pointer"></div>
+      <div class="bubble limit"></div>
+      <div class="bubble limit"></div>
+      <div class="bubble noshow"></div>
+      <div class="bubble"></div>
+      <div class="bubble noshow"></div>    	
+  	</rzslider>
+  </div>
+
+  <div class="range-slider">
+    <rzslider
+    	rz-slider-floor="range2.floor"
+    	rz-slider-ceil="range2.ceil"
+    	rz-slider-model="range2.min"
+    	rz-slider-high="range2.max"
+    	rz-slider-step="{{range2.step}}">
+      <div class="bar">
+        <span class="tick" style="left:{{range2.tick1p}}%">|<br>A<br>${{range2.tick1n}}</span>
+        <span class="tick" style="left:{{range2.tick2p}}%">|<br>B<br>${{range2.tick2n}}</span>
+        <span class="tick" style="left:{{range2.tick3p}}%">|<br>C<br>${{range2.tick3n}}</span>
+      </div>
+      <div class="bar selection"></div>
+      <div class="pointer"></div>
+      <div class="pointer"></div>
+      <div class="bubble limit"></div>
+      <div class="bubble limit"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>      	
+  	</rzslider>
+  </div>
+
+</body>
+</html>

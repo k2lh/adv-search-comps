@@ -1,0 +1,29 @@
+{
+  "range1": {
+    "floor": 220,
+    "ceil": 2400,
+    "min": 220,
+    "max": 1800,
+    "step": 10,
+    "tick1n": 450,
+    "tick2n": 600,
+    "tick3n": 1200,
+    "tick1p": 9.58,
+    "tick2p": 15.83,
+    "tick3p": 40.83   
+  }, 
+  "range2": {
+    "floor": 650,
+    "ceil": 5750,
+    "min": 1040,
+    "max": 4300,
+    "step": 10,
+    "tick1n": 1304,
+    "tick2n": 2273,
+    "tick3n": 2873,
+    "tick1p": 11.37,
+    "tick2p": 28.23,
+    "tick3p": 38.66    
+    
+  }
+}
